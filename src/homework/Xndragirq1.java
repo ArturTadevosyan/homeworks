@@ -4,15 +4,15 @@ public class Xndragirq1 {
 
     public static void main(String[] args) {
 
-        int a = 5, b = -4, c = 8;
+        int number1 = 5, number2 = -4, number3 = 8;
 
         //Task 24
         System.out.println("------------------------");
         System.out.println("Task 24 -> Թվերից Ճիշտ երկուսը հավասար են երկուսի");
-        System.out.println("a = " + a + " , " + "b = " + b +" , " + "c = " + c);
+        System.out.println("number1 = " + number1 + " , " + "number2 = " + number2 + " , " + "number3 = " + number3);
         System.out.println("------------------------");
 
-        if ((a == 2 && b == 2) || (b == 2 && c == 2) || (a == 2 && c == 2)) {
+        if ((number1 == 2 && number2 == 2) || (number2 == 2 && number3 == 2) || (number1 == 2 && number3 == 2)) {
             System.out.println(true);
         } else {
             System.out.println(false);
@@ -20,11 +20,11 @@ public class Xndragirq1 {
 
         //Task 27
         System.out.println("\n------------------------");
-        System.out.println("Task 27 ->  Եթե Թվաբանական Պրոգրեսիա են true else false");
-        System.out.println("a = " + a + " , " + "b = " + b +" , " + "c = " + c);
+        System.out.println("Task 27 ->  Եթե Թվաբանական Պրոգրեսիա են true հակառակ դեպքում false");
+        System.out.println("number1 = " + number1 + " , " + "number2 = " + number2 + " , " + "number3 = " + number3);
         System.out.println("------------------------");
 
-        if (b - a == c - b) {
+        if (number2 - number1 == number3 - number2) {
             System.out.println(true);
         } else {
             System.out.println(false);
@@ -32,12 +32,12 @@ public class Xndragirq1 {
 
         //Task 28
         System.out.println("\n------------------------");
-        System.out.println("Task 28 -> Եթե Թվերը Երկրաչափական պրոգրեսիա են true else false");
-        System.out.println("a = " + a + " , " + "b = " + b +" , " + "c = " + c);
+        System.out.println("Task 28 -> Եթե Թվերը Երկրաչափական պրոգրեսիա են true հակառակ դեպքում false");
+        System.out.println("number1 = " + number1 + " , " + "number2 = " + number2 + " , " + "number3 = " + number3);
         System.out.println("------------------------");
 
-        double a1 = 2, b1 = 4, c1 = 8;
-        if (b1 / a1 == c1 / b1) {
+        double numberD1 = 2, numberD2 = 4, numberD3 = 8;
+        if (numberD2 / numberD1 == numberD3 / numberD2) {
             System.out.println(true);
         } else {
             System.out.println(false);
@@ -46,52 +46,52 @@ public class Xndragirq1 {
         //Task 29
         System.out.println("\n------------------------");
         System.out.println("Task 29 -> Թվերը Ըստ աճման կարգի");
-        System.out.println("a = " + a + " , " + "b = " + b +" , " + "c = " + c);
+        System.out.println("number1 = " + number1 + " , " + "number2 = " + number2 + " , " + "number3 = " + number3);
         System.out.println("------------------------");
 
-        if (a < b && a < c) {
-            if (b < c) {
-                System.out.println(a + "->" + b + "->" + c);
+        if (number1 < number2 && number1 < number3) {
+            if (number2 < number3) {
+                System.out.println(number1 + "->" + number2 + "->" + number3);
             } else {
-                System.out.println(a + "->" + c + "->" + b);
+                System.out.println(number1 + "->" + number3 + "->" + number2);
             }
-        } else if (b < c) {
-            if (a < c) {
-                System.out.println(b + "->" + a + "->" + c);
+        } else if (number2 < number3) {
+            if (number1 < number3) {
+                System.out.println(number2 + "->" + number1 + "->" + number3);
             } else {
-                System.out.println(b + "->" + c + "->" + a);
+                System.out.println(number2 + "->" + number3 + "->" + number1);
             }
         } else {
-            if (a < b) {
-                System.out.println(c + "->" + a + "->" + b);
+            if (number1 < number2) {
+                System.out.println(number3 + "->" + number1 + "->" + number2);
             } else {
-                System.out.println(c + "->" + b + "->" + a);
+                System.out.println(number3 + "->" + number2 + "->" + number1);
             }
         }
 
         //Task 30
         System.out.println("\n------------------------");
         System.out.println("Task 30 -> Թվերը Ըստ նվազման կարգի");
-        System.out.println("a = " + a + " , " + "b = " + b +" , " + "c = " + c);
+        System.out.println("number1 = " + number1 + " , " + "number2 = " + number2 + " , " + "number3 = " + number3);
         System.out.println("------------------------");
 
-        if (a > b && a > c) {
-            if (b > c) {
-                System.out.println(a + "->" + b + "->" + c);
+        if (number1 > number2 && number1 > number3) {
+            if (number2 > number3) {
+                System.out.println(number1 + "->" + number2 + "->" + number3);
             } else {
-                System.out.println(a + "->" + c + "->" + b);
+                System.out.println(number1 + "->" + number3 + "->" + number2);
             }
-        } else if (b > c) {
-            if (a > c) {
-                System.out.println(b + "->" + a + "->" + c);
+        } else if (number2 > number3) {
+            if (number1 > number3) {
+                System.out.println(number2 + "->" + number1 + "->" + number3);
             } else {
-                System.out.println(b + "->" + c + "->" + a);
+                System.out.println(number2 + "->" + number3 + "->" + number1);
             }
         } else {
-            if (a > b) {
-                System.out.println(c + "->" + a + "->" + b);
+            if (number1 > number2) {
+                System.out.println(number3 + "->" + number1 + "->" + number2);
             } else {
-                System.out.println(c + "->" + b + "->" + a);
+                System.out.println(number3 + "->" + number2 + "->" + number1);
             }
         }
 

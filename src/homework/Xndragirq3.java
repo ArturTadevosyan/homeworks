@@ -5,19 +5,19 @@ public class Xndragirq3 {
         int number = 686;
         boolean t;
         System.out.println("number = " + number);
-        double haryuravor = number / 100;
-        System.out.println("haryuravor = " + haryuravor);
-        double tasnavor = (number / 10) % 10;
-        System.out.println("tasnavor = " + tasnavor);
-        double miavor = number % 10;
-        System.out.println("miavor = " + miavor);
-        double numberDigitSum = miavor + tasnavor + haryuravor;
+        double hundreds = number / 100;
+        System.out.println("hundreds = " + hundreds);
+        double tens = (number / 10) % 10;
+        System.out.println("tens = " + tens);
+        double unit = number % 10;
+        System.out.println("unit = " + unit);
+        double numberDigitSum = unit + tens + hundreds;
         System.out.println("------------------------");
 
         System.out.println("\n------------------------");
         System.out.println("Task 51");
         System.out.println("-------------------------");
-        if (miavor == tasnavor + haryuravor) {
+        if (unit == tens + hundreds) {
             t = true;
         } else {
             t = false;
@@ -27,7 +27,7 @@ public class Xndragirq3 {
         System.out.println("\n------------------------");
         System.out.println("Task 52");
         System.out.println("-------------------------");
-        if (miavor == tasnavor || miavor == haryuravor || haryuravor == tasnavor) {
+        if (unit == tens || unit == hundreds || hundreds == tens) {
             t = true;
         } else {
             t = false;
@@ -44,7 +44,7 @@ public class Xndragirq3 {
         if (number > k) {
             answer = number / numberDigitSum;
         } else {
-            answer = number / miavor;
+            answer = number / unit;
         }
         System.out.println("Task 53 answer = " + answer);
 
@@ -53,12 +53,12 @@ public class Xndragirq3 {
         System.out.println("Task 54");
         System.out.println("-------------------------");
         double max;
-        if (miavor > tasnavor && miavor > haryuravor) {
-            max = miavor;
-        } else if (tasnavor > miavor && tasnavor > haryuravor) {
-            max = tasnavor;
+        if (unit > tens && unit > hundreds) {
+            max = unit;
+        } else if (tens > unit && tens > hundreds) {
+            max = tens;
         } else {
-            max = haryuravor;
+            max = hundreds;
         }
         System.out.println("Task 54 answer max = " + max);
 
@@ -67,12 +67,12 @@ public class Xndragirq3 {
         System.out.println("Task 55");
         System.out.println("-------------------------");
         double min;
-        if (miavor < tasnavor && miavor < haryuravor) {
-            min = miavor;
-        } else if (tasnavor < miavor && tasnavor < haryuravor) {
-            min = tasnavor;
+        if (unit < tens && unit < hundreds) {
+            min = unit;
+        } else if (tens < unit && tens < hundreds) {
+            min = tens;
         } else {
-            min = haryuravor;
+            min = hundreds;
         }
         System.out.println("Task 55 answer min = " + min);
 
@@ -81,7 +81,7 @@ public class Xndragirq3 {
         System.out.println("Task 56");
         System.out.println("-------------------------");
 
-        if (miavor > tasnavor) {
+        if (unit > tens) {
             answer = number / numberDigitSum;
         } else {
             answer = number;
@@ -95,9 +95,9 @@ public class Xndragirq3 {
         System.out.println("-------------------------");
 
         if (number > 300) {
-            answer = tasnavor / miavor;
+            answer = tens / unit;
         } else {
-            answer = haryuravor / miavor;
+            answer = hundreds / unit;
         }
         System.out.println("Task 57 answer  = " + answer);
 
@@ -107,7 +107,7 @@ public class Xndragirq3 {
         System.out.println("Task 58");
         System.out.println("-------------------------");
         char f;
-        if (tasnavor + haryuravor < 5) {
+        if (tens + hundreds < 5) {
             f = 'a';
         } else {
             f = 'b';
@@ -120,23 +120,23 @@ public class Xndragirq3 {
         System.out.println("Task 59 -> Թվերը Ըստ աճման կարգի");
         System.out.println("------------------------");
 
-        if (miavor < tasnavor && miavor < haryuravor) {
-            if (tasnavor > haryuravor) {
-                System.out.println(miavor + "->" + tasnavor + "->" + haryuravor);
+        if (unit < tens && unit < hundreds) {
+            if (tens > hundreds) {
+                System.out.println(unit + "->" + tens + "->" + hundreds);
             } else {
-                System.out.println(miavor + "->" + haryuravor + "->" + tasnavor);
+                System.out.println(unit + "->" + hundreds + "->" + tens);
             }
-        } else if (tasnavor < haryuravor) {
-            if (miavor < haryuravor) {
-                System.out.println(tasnavor + "->" + miavor + "->" + haryuravor);
+        } else if (tens < hundreds) {
+            if (unit < hundreds) {
+                System.out.println(tens + "->" + unit + "->" + hundreds);
             } else {
-                System.out.println(tasnavor + "->" + haryuravor + "->" + miavor);
+                System.out.println(tens + "->" + hundreds + "->" + unit);
             }
         } else {
-            if (miavor > tasnavor) {
-                System.out.println(haryuravor + "->" + miavor + "->" + tasnavor);
+            if (unit > tens) {
+                System.out.println(hundreds + "->" + unit + "->" + tens);
             } else {
-                System.out.println(haryuravor + "->" + tasnavor + "->" + miavor);
+                System.out.println(hundreds + "->" + tens + "->" + unit);
             }
         }
 
@@ -146,23 +146,23 @@ public class Xndragirq3 {
         System.out.println("Task 60 -> Թվերը Ըստ նվազման կարգի");
         System.out.println("------------------------");
 
-        if (miavor > tasnavor && miavor > haryuravor) {
-            if (tasnavor > haryuravor) {
-                System.out.println(miavor + "->" + tasnavor + "->" + haryuravor);
+        if (unit > tens && unit > hundreds) {
+            if (tens > hundreds) {
+                System.out.println(unit + "->" + tens + "->" + hundreds);
             } else {
-                System.out.println(miavor + "->" + haryuravor + "->" + tasnavor);
+                System.out.println(unit + "->" + hundreds + "->" + tens);
             }
-        } else if (tasnavor > haryuravor) {
-            if (miavor > haryuravor) {
-                System.out.println(tasnavor + "->" + miavor + "->" + haryuravor);
+        } else if (tens > hundreds) {
+            if (unit > hundreds) {
+                System.out.println(tens + "->" + unit + "->" + hundreds);
             } else {
-                System.out.println(tasnavor + "->" + haryuravor + "->" + miavor);
+                System.out.println(tens + "->" + hundreds + "->" + unit);
             }
         } else {
-            if (miavor > tasnavor) {
-                System.out.println(haryuravor + "->" + miavor + "->" + tasnavor);
+            if (unit > tens) {
+                System.out.println(hundreds + "->" + unit + "->" + tens);
             } else {
-                System.out.println(haryuravor + "->" + tasnavor + "->" + miavor);
+                System.out.println(hundreds + "->" + tens + "->" + unit);
             }
         }
 
