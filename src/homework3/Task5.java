@@ -15,7 +15,7 @@ public class Task5 {
         System.out.println("array =  " + Arrays.toString(array));
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > 24.12 && array[i] < 467.23) {
+            if (array[i] >= 24.12 && array[i] <= 467.23) {
                 System.out.println("array[ " + i + " ] = " + array[i]);
             }
         }

@@ -14,12 +14,14 @@ public class Task7 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please write 0 <-> 21 range , one number = ");
         int multipleNumber = scanner.nextInt();
-        while (multipleNumber > 21 || multipleNumber < 0) {
+        while (multipleNumber >= 21 || multipleNumber <= 0) {
             System.out.println("Please write correct number 0 <-> 21 ,your number is out of this range = " + multipleNumber);
             multipleNumber = scanner.nextInt();
         }
         for (int i = 1; i < 11; i++) {
             System.out.println(multipleNumber + " x " + i + " = " + multipleNumber * i);
+//            System.out.printf("%d x %d = %d%n", multipleNumber, i, multipleNumber * i);
+
         }
 
     }

@@ -1,6 +1,6 @@
 package homework;
 
-public class Xndragirq2 {
+public class TasksWith4DigitNumbers {
     public static void main(String[] args) {
 
         int number1 = -200, number2 = 9, number3 = -500, number4 = -7;

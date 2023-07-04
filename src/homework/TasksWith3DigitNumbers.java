@@ -1,6 +1,6 @@
 package homework;
 
-public class Xndragirq1 {
+public class TasksWith3DigitNumbers {
 
     public static void main(String[] args) {
 

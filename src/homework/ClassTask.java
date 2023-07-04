@@ -1,11 +1,11 @@
 package homework;
 
-public class XndirRoom {
+public class ClassTask {
     public static void main(String[] args) {
         //Task 1
-        int x = 2;
+        int number = 2;
 
-        switch (x) {
+        switch (number) {
             case 1:
             case 3:
             case 5:

@@ -1,8 +1,8 @@
 package homework;
 
-public class Xndragirq3 {
+public class Tasks2With3DigitNumbers {
     public static void main(String[] args) {
-        int number = 686;
+        int number = 600;
         boolean t;
         System.out.println("number = " + number);
         double hundreds = number / 100;
@@ -10,6 +10,11 @@ public class Xndragirq3 {
         double tens = (number / 10) % 10;
         System.out.println("tens = " + tens);
         double unit = number % 10;
+
+        if (unit == 0 ){
+            System.err.println("Միավորի արժեքը պետք է լինի ոչ 0");
+            return;
+        }
         System.out.println("unit = " + unit);
         double numberDigitSum = unit + tens + hundreds;
         System.out.println("------------------------");
@@ -17,21 +22,15 @@ public class Xndragirq3 {
         System.out.println("\n------------------------");
         System.out.println("Task 51");
         System.out.println("-------------------------");
-        if (unit == tens + hundreds) {
-            t = true;
-        } else {
-            t = false;
-        }
+        t = unit == tens + hundreds;
+
         System.out.println("Task 51 answer ->  t = " + t);
 
         System.out.println("\n------------------------");
         System.out.println("Task 52");
         System.out.println("-------------------------");
-        if (unit == tens || unit == hundreds || hundreds == tens) {
-            t = true;
-        } else {
-            t = false;
-        }
+        t = unit == tens || unit == hundreds || hundreds == tens;
+
         System.out.println("Task 52 answer ->  t = " + t);
 
 
