@@ -9,7 +9,7 @@ public class Task1 {
         System.out.println("----------------------------");
         int[] num = new int[5];
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < num.length; i++) {
             num[i] = 2;
         }
 
