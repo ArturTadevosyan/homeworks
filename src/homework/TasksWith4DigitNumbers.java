@@ -92,6 +92,16 @@ public class TasksWith4DigitNumbers {
         }
 
 
+        if (number1 % 2 != 0 && number2 % 2 != 0 || number1 % 2 != 0 && number3 % 2 != 0 || number1 % 2 != 0 && number4 % 2 != 0) {
+            System.out.println(1);
+        } else if ( number2 % 2 != 0 && number4 % 2 != 0 || number2 % 2 != 0 && number3 % 2 != 0 || number2 % 2 != 0 && number1 % 2 != 0) {
+            System.out.println(1);
+        }else if (number3 % 2 != 0 && number1 % 2 != 0 || number3 % 2 != 0 && number2 % 2 != 0 || number3 % 2 != 0 && number4 % 2 != 0){
+            System.out.println(1);
+        } else {
+            System.out.println(2);
+        }
+
         //Task 37
         System.out.println("\n------------------------");
         System.out.println("Task 37 ->  Եթե Թվաբանական Պրոգրեսիա են true հակառակ դեպքում false");

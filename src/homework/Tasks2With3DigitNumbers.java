@@ -2,14 +2,14 @@ package homework;
 
 public class Tasks2With3DigitNumbers {
     public static void main(String[] args) {
-        int number = 600;
+        int number = 605;
         boolean t;
         System.out.println("number = " + number);
         double hundreds = number / 100;
         System.out.println("hundreds = " + hundreds);
         double tens = (number / 10) % 10;
         System.out.println("tens = " + tens);
-        double unit = number % 10;
+        int unit = number % 10;
 
         if (unit == 0 ){
             System.err.println("Միավորի արժեքը պետք է լինի ոչ 0");
