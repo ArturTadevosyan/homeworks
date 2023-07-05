@@ -13,7 +13,7 @@ public class Task1 {
             num[i] = 2;
         }
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < num.length; i++) {
             System.out.println("num[ "+ i +" ] " + num[i]);
         }
 
