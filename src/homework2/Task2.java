@@ -10,17 +10,20 @@ public class Task2 {
         //first example
         int[] num1 = new int[1000];
         int i = 0;
+        System.out.println("while loop");
         while (i < num1.length) {
             num1[i] = i + 1;
-//            System.out.println("num1[ "+ i +" ] = "+num1[i]);
+            System.out.println("num1[ "+ i +" ] = "+num1[i]);
             i++;
         }
+        System.out.println("-------------------------");
+        System.out.println("for loop");
 
         //second example
         int[] num2 = new int[1000];
         for (int j = 0; j < num2.length; j++) {
             num2[j] = j + 1;
-//            System.out.println("num1[ "+ i +" ] = " + num2[j]);
+            System.out.println("num1[ "+ j +" ] = " + num2[j]);
         }
     }
 

@@ -40,14 +40,17 @@ public class Task3 {
         }
 
 
+        System.out.println("for loop");
         //for
         for (int j = 0; j < oddNumbers.length; j++) {
             System.out.println("oddNumbers[ " + j + " ] = " + oddNumbers[j]);
         }
+        System.out.println("-------------------------------");
+        System.out.println("foreach loop");
 
-//        //foreach
-//        for (int oddNumber : oddNumbers) {
-//            System.out.println(oddNumber);
-//        }
+        //foreach
+        for (int oddNumber : oddNumbers) {
+            System.out.print(oddNumber + " | ");
+        }
     }
 }
