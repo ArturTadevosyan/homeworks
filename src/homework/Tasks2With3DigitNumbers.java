@@ -125,7 +125,7 @@ public class Tasks2With3DigitNumbers {
             } else {
                 System.out.println(unit + "->" + hundreds + "->" + tens);
             }
-        } else if (tens < hundreds) {
+        } else if (tens < hundreds && tens < unit) {
             if (unit < hundreds) {
                 System.out.println(tens + "->" + unit + "->" + hundreds);
             } else {
@@ -151,7 +151,7 @@ public class Tasks2With3DigitNumbers {
             } else {
                 System.out.println(unit + "->" + hundreds + "->" + tens);
             }
-        } else if (tens > hundreds) {
+        } else if (tens > hundreds && tens > unit) {
             if (unit > hundreds) {
                 System.out.println(tens + "->" + unit + "->" + hundreds);
             } else {
