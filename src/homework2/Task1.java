@@ -7,11 +7,16 @@ public class Task1 {
         System.out.println("Task 1");
         System.out.println("Create an array and fill it with 2 number");
         System.out.println("----------------------------");
-        int[] num = new int[2];
-        num[0] = 12;
-        num[1] = -15;
-        System.out.println("num[0] = " + num[0]);
-        System.out.println("num[1] = " + num[1]);
+        int[] num = new int[5];
+
+        for (int i = 0; i < 5; i++) {
+            num[i] = 2;
+        }
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println("num[ "+ i +" ] " + num[i]);
+        }
+
 
     }
 }
