@@ -46,8 +46,8 @@ public class Task3 {
             System.out.println("oddNumbers[ " + j + " ] = " + oddNumbers[j]);
         }
         System.out.println("-------------------------------");
-        System.out.println("foreach loop");
 
+        System.out.println("foreach loop");
         //foreach
         for (int oddNumber : oddNumbers) {
             System.out.print(oddNumber + " | ");

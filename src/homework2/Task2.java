@@ -21,9 +21,9 @@ public class Task2 {
 
         //second example
         int[] num2 = new int[1000];
-        for (int j = 0; j < num2.length; j++) {
-            num2[j] = j + 1;
-            System.out.println("num1[ "+ j +" ] = " + num2[j]);
+        for (int j = 1; j <= num2.length; j++) {
+            num2[j-1] = j;
+            System.out.println("num1[ "+ (j-1) +" ] = " + num2[j-1]);
         }
     }
 
